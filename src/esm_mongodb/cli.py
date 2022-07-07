@@ -22,6 +22,8 @@ import hashlib
 from urllib.parse import quote_plus
 from typing import Union
 
+from . import __version__
+
 import click
 from pymongo.database import Database
 from pymongo.errors import ConnectionFailure
@@ -52,7 +54,7 @@ def check_server():
             raise e
 
 
-@click.version_option()
+@click.version_option(version=__version__)
 @click.group()
 def main(args=None):
     return 0
