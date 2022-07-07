@@ -1,0 +1,2 @@
+include versioneer.py
+include src/esm_mongodb/_version.py
