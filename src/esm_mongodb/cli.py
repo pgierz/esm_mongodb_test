@@ -33,7 +33,8 @@ HOST: str = "bhv-mongodb.awi.de"
 """str: the database hostname"""
 USER: str = "myUserAdmin"
 """str: the admin user"""
-PASSWORD: str = "chooP3ai"
+# The password stored in git history is comprised and has been changed! 
+PASSWORD: str = getpass.getpass("Please enter the password for bhv-mongodb.awi.de: ")
 """str: the admin password
 WARNING(PG): I need to find a better way of doing this, hard coding it is silly...
 """
